@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% block body %}
 <h1>Vote na pergunta: {{pergunta.question_text}}</h1>
+<p>
+    <img src="{{pergunta.imagem.url}}">
+</p>
 <div>
     <form action="" method="post">
         {% csrf_token %}
